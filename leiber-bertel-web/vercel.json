@@ -1,5 +1,9 @@
 {
+	"$schema": "https://openapi.vercel.sh/vercel.json",
+	"framework": "angular",
+	"buildCommand": "npm run build",
+	"outputDirectory": "dist/leiber-bertel-web/browser",
 	"rewrites": [
-		{"source": "/(.*)", "destination": "/"}
+		{ "source": "/(.*)", "destination": "/index.html" }
 	]
 }
