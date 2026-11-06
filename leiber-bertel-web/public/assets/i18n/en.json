@@ -137,13 +137,23 @@
         "TITLE": "Software Programming Technician",
         "SUBTITLE": "Colombia - SENA",
         "CALENDAR": "2023 - 2024"
+      },
+      "UNIVERSITY": {
+        "TITLE": "Bachelor's Degree in Software Engineering",
+        "SUBTITLE": "Colombia - Politécnico Grancolombiano",
+        "CALENDAR": "2025 - 2027"
       }
     },
     "WORK": {
+      "BIZAGI": {
+        "TITLE": "Full Stack Developer",
+        "SUBTITLE": "Bizagi - Remote",
+        "CALENDAR": "2026 - Present"
+      },
       "SOFTWARE": {
         "TITLE": "Software Developer (Mobile and Web)",
         "SUBTITLE": "Quipux - Medellín, Antioquia",
-        "CALENDAR": "2023 - Present"
+        "CALENDAR": "2023 - 2026"
       },
       "FULLSTACK": {
         "TITLE": "Full-stack Developer",
