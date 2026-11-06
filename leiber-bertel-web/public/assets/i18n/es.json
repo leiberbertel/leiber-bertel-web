@@ -137,13 +137,23 @@
         "TITLE": "Técnico en Programación de Software",
         "SUBTITLE": "Colombia - SENA",
         "CALENDAR": "2023 - 2024"
+      },
+      "UNIVERSITY": {
+        "TITLE": "Título Profesional en Ingeniería de Software",
+        "SUBTITLE": "Colombia - Politécnico Grancolombiano",
+        "CALENDAR": "2025 - 2027"
       }
     },
     "WORK": {
+      "BIZAGI": {
+        "TITLE": "Desarrollador Full Stack",
+        "SUBTITLE": "Bizagi - Remoto",
+        "CALENDAR": "2026 - Actualidad"
+      },
       "SOFTWARE": {
         "TITLE": "Desarrollador de Software (Mobile y Web)",
         "SUBTITLE": "Quipux - Medellín, Antioquia",
-        "CALENDAR": "2023 - Actualidad"
+        "CALENDAR": "2023 - 2026"
       },
       "FULLSTACK": {
         "TITLE": "Developer full-stack",

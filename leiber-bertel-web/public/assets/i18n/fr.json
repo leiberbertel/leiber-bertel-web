@@ -137,13 +137,23 @@
         "TITLE": "Technicien en programmation logicielle",
         "SUBTITLE": "Colombie - SENA",
         "CALENDAR": "2023 - 2024"
+      },
+      "UNIVERSITY": {
+        "TITLE": "Licence en ingénierie logicielle",
+        "SUBTITLE": "Colombie - Politécnico Grancolombiano",
+        "CALENDAR": "2025 - 2027"
       }
     },
     "WORK": {
+      "BIZAGI": {
+        "TITLE": "Développeur Full Stack",
+        "SUBTITLE": "Bizagi - À distance",
+        "CALENDAR": "2026 - Aujourd’hui"
+      },
       "SOFTWARE": {
         "TITLE": "Développeur logiciel (Mobile et Web)",
         "SUBTITLE": "Quipux - Medellín, Antioquia",
-        "CALENDAR": "2023 - Aujourd’hui"
+        "CALENDAR": "2023 - 2026"
       },
       "FULLSTACK": {
         "TITLE": "Développeur full-stack",

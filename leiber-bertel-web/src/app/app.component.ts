@@ -137,9 +137,9 @@ export class AppComponent implements OnInit {
     image: 'https://plhmjzol7fhqdza8.public.blob.vercel-storage.com/img/about.jpeg',
     description: 'ABOUT.DESCRIPTION',
     stats: [
-      { value: '02+', label: 'ABOUT.STATS.EXPERIENCE' },
-      { value: '25+', label: 'ABOUT.STATS.PROJECTS' },
-      { value: '01+', label: 'ABOUT.STATS.COMPANIES' },
+      { value: '03+', label: 'ABOUT.STATS.EXPERIENCE' },
+      { value: '30+', label: 'ABOUT.STATS.PROJECTS' },
+      { value: '02+', label: 'ABOUT.STATS.COMPANIES' },
     ],
     cvLink: 'https://plhmjzol7fhqdza8.public.blob.vercel-storage.com/pdf/leiber_bertel_curriculum.pdf',
     cvLabel: 'ABOUT.CV',
@@ -170,10 +170,10 @@ export class AppComponent implements OnInit {
       skills: [
         { name: 'HTML', level: '90%', barClass: 'skills__html' },
         { name: 'CSS', level: '75%', barClass: 'skills__css' },
-        { name: 'JavaScript', level: '80%', barClass: 'skills__python' },
+        { name: 'JavaScript', level: '90%', barClass: 'skills__python' },
         { name: 'Vue', level: '70%', barClass: 'skills__vue' },
-        { name: 'Angular', level: '70%', barClass: 'skills__vue' },
-        { name: 'Git & Github', level: '70%', barClass: 'skills__git' },
+        { name: 'Angular', level: '90%', barClass: 'skills__vue' },
+        { name: 'Git & Github', level: '90%', barClass: 'skills__git' },
       ],
     },
     {
@@ -182,8 +182,8 @@ export class AppComponent implements OnInit {
       subtitle: 'SKILLS.CATEGORIES.MOBILE.SUBTITLE',
       icon: 'uil uil-mobile-android',
       skills: [
-        { name: 'Flutter', level: '70%', barClass: 'skills__flutter' },
-        { name: 'Kotlin', level: '65%', barClass: 'skills__kotlin' },
+        { name: 'Flutter', level: '80%', barClass: 'skills__flutter' },
+        { name: 'Kotlin', level: '70%', barClass: 'skills__kotlin' },
         {
           name: 'Jetpack Compose',
           level: '65%',
@@ -200,53 +200,77 @@ export class AppComponent implements OnInit {
 
   education: QualificationItem[] = [
     {
+      title: 'QUALIFICATION.EDUCATION.UNIVERSITY.TITLE',
+      subtitle: 'QUALIFICATION.EDUCATION.UNIVERSITY.SUBTITLE',
+      calendar: 'QUALIFICATION.EDUCATION.UNIVERSITY.CALENDAR',
+      start: 2025,
+      end: 2027,
+    },
+    {
       title: 'QUALIFICATION.EDUCATION.BACHELOR.TITLE',
       subtitle: 'QUALIFICATION.EDUCATION.BACHELOR.SUBTITLE',
       calendar: 'QUALIFICATION.EDUCATION.BACHELOR.CALENDAR',
+      start: 2018,
+      end: 2020,
     },
     {
       title: 'QUALIFICATION.EDUCATION.BACKEND.TITLE',
       subtitle: 'QUALIFICATION.EDUCATION.BACKEND.SUBTITLE',
       calendar: 'QUALIFICATION.EDUCATION.BACKEND.CALENDAR',
-      align: 'right',
+      start: 2021,
+      end: 2023,
     },
     {
       title: 'QUALIFICATION.EDUCATION.FULLSTACK.TITLE',
       subtitle: 'QUALIFICATION.EDUCATION.FULLSTACK.SUBTITLE',
       calendar: 'QUALIFICATION.EDUCATION.FULLSTACK.CALENDAR',
+      start: 2022,
+      end: 2023,
     },
     {
       title: 'QUALIFICATION.EDUCATION.SOFTWARE.TITLE',
       subtitle: 'QUALIFICATION.EDUCATION.SOFTWARE.SUBTITLE',
       calendar: 'QUALIFICATION.EDUCATION.SOFTWARE.CALENDAR',
-      align: 'right',
-      last: true,
+      start: 2023,
+      end: 2024,
     },
   ];
 
   work: QualificationItem[] = [
     {
+      title: 'QUALIFICATION.WORK.BIZAGI.TITLE',
+      subtitle: 'QUALIFICATION.WORK.BIZAGI.SUBTITLE',
+      calendar: 'QUALIFICATION.WORK.BIZAGI.CALENDAR',
+      start: 2026,
+      end: null,
+    },
+    {
       title: 'QUALIFICATION.WORK.SOFTWARE.TITLE',
       subtitle: 'QUALIFICATION.WORK.SOFTWARE.SUBTITLE',
       calendar: 'QUALIFICATION.WORK.SOFTWARE.CALENDAR',
+      start: 2023,
+      end: 2026,
     },
     {
       title: 'QUALIFICATION.WORK.FULLSTACK.TITLE',
       subtitle: 'QUALIFICATION.WORK.FULLSTACK.SUBTITLE',
       calendar: 'QUALIFICATION.WORK.FULLSTACK.CALENDAR',
-      align: 'right',
+      start: 2022,
+      end: 2023,
     },
     {
       title: 'QUALIFICATION.WORK.LOGISTICS.TITLE',
       subtitle: 'QUALIFICATION.WORK.LOGISTICS.SUBTITLE',
       calendar: 'QUALIFICATION.WORK.LOGISTICS.CALENDAR',
+      start: 2021,
+      end: 2022,
     },
     {
       title: 'QUALIFICATION.WORK.ADMIN.TITLE',
       subtitle: 'QUALIFICATION.WORK.ADMIN.SUBTITLE',
       calendar: 'QUALIFICATION.WORK.ADMIN.CALENDAR',
-      align: 'right',
-      last: true,
+      start: 2019,
+      end: 2021,
     },
   ];
 

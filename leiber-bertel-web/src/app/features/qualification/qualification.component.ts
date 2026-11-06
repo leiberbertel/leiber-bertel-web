@@ -6,8 +6,31 @@ export interface QualificationItem {
   title: string;
   subtitle: string;
   calendar: string;
-  align?: 'left' | 'right';
-  last?: boolean;
+  start: number;
+  end: number | null;
+}
+
+interface PositionedQualificationItem extends QualificationItem {
+  align: 'left' | 'right';
+  last: boolean;
+}
+
+/**
+ * Ordena de más reciente a más antiguo: primero por año de fin (lo que sigue
+ * en curso va arriba) y, si empatan, por año de inicio más reciente. Luego
+ * asigna la alternancia del timeline y marca el último elemento.
+ */
+function sortQualifications(items: QualificationItem[]): PositionedQualificationItem[] {
+  return [...items]
+    .sort(
+      (a, b) =>
+        (b.end ?? Infinity) - (a.end ?? Infinity) || b.start - a.start,
+    )
+    .map((item, i, arr) => ({
+      ...item,
+      align: i % 2 === 0 ? 'right' : 'left',
+      last: i === arr.length - 1,
+    }));
 }
 
 @Component({
@@ -112,8 +135,16 @@ export interface QualificationItem {
   `,
 })
 export class QualificationComponent {
-  @Input() education: QualificationItem[] = [];
-  @Input() work: QualificationItem[] = [];
+  education: PositionedQualificationItem[] = [];
+  work: PositionedQualificationItem[] = [];
+
+  @Input('education') set educationInput(items: QualificationItem[]) {
+    this.education = sortQualifications(items ?? []);
+  }
+
+  @Input('work') set workInput(items: QualificationItem[]) {
+    this.work = sortQualifications(items ?? []);
+  }
 
   activeTab: 'education' | 'work' = 'education';
 
